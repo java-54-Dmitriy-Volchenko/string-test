@@ -20,4 +20,33 @@ class StringTest {
 		assertTrue(hello.contains("ell"));
 		assertFalse(hello.contains("elo"));
 	}
-}
+	@Test	
+	   void compareToTest() {
+	       
+	        String one = "Hello";
+	        String two = "Hello";
+	        	       
+	        assertTrue(one.compareTo(two) == 0);
+	        assertFalse(one.compareTo(two) != 0);
+	        
+	        one = "Hello";
+	        two = "Hallo";
+	        
+	        assertTrue(one.compareTo(two) > 0);
+	        assertFalse(one.compareTo(two) <= 0);
+	        
+	        one = "Hello ";
+	        two = "Hello";
+	        
+	        assertTrue(one.compareTo(two) > 0);
+	        assertFalse(one.compareTo(two) <= 0);
+	        
+	        
+	        one = "";
+	        two = "1";
+
+	        assertTrue(one.compareTo(two) < 0); 
+	        assertFalse(one.compareTo(two) >= 0);
+	    }
+	}
+
