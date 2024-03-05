@@ -53,10 +53,21 @@ class StringTest {
 
 	        assertTrue(one.compareTo(two) < 0); 
 	        assertFalse(one.compareTo(two) >= 0);
-	    }}
+	    }
 	
 
-		//@Test
-		//void compareToIgnoreCaseTest() {
+		@Test
+		void compareToIgnoreCaseTest() {
+			  String one = "Hello";
+		      String two = "hello";
+
+		        assertTrue(one.compareToIgnoreCase(two) == 0); 
+		        assertFalse(one.compareToIgnoreCase(two) != 0);
+		        
+		        one = "Привет";
+		        two = "привет";
+		        
+		        assertTrue(one.compareToIgnoreCase(two) == 0); 
+		        assertFalse(one.compareToIgnoreCase(two) != 0);
 			
-		//}
+		}}
