@@ -92,5 +92,24 @@ class StringTest {
 		        
 		        assertFalse(one.startsWith(prefix, toffset));
 		        
+		        prefix = "Bo";
+		      	
+		        
+		        assertTrue(one.startsWith(prefix));
+		        
 		    }
+		 @Test
+		    void endsWithTest() {
+			 
+			    String one = "Boogi-woogi";
+		        String prefix = "gi";
+		             
+		        assertTrue(one.endsWith(prefix)); 
+		        prefix = "Boogi-woogi";
+		        assertTrue(one.endsWith(prefix)); 
+		        prefix = "";
+		        assertTrue(one.endsWith(prefix)); 
+		        prefix = "ga";
+		        assertFalse(one.endsWith(prefix));
+}
 }
