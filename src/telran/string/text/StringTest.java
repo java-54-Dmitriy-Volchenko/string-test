@@ -47,6 +47,16 @@ class StringTest {
 
 	        assertTrue(one.compareTo(two) < 0); 
 	        assertFalse(one.compareTo(two) >= 0);
-	    }
-	}
+	        
+	        one = "Hello";
+	        two = "hello";
 
+	        assertTrue(one.compareTo(two) < 0); 
+	        assertFalse(one.compareTo(two) >= 0);
+	    }}
+	
+
+		//@Test
+		//void compareToIgnoreCaseTest() {
+			
+		//}
