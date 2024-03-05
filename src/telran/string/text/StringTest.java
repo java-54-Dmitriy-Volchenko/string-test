@@ -132,4 +132,19 @@ class StringTest {
 			        
 			       
 }
-}
+			@Test
+		    void indexOfTest() {
+				  String one = "Boogi-woogi";
+			      String prefix = "oo";			       
+			      assertTrue(one.indexOf(prefix)==1); 
+			      prefix = "i";			       
+			      assertTrue(one.indexOf(prefix)==4);
+			      
+			      prefix = "go";
+			      assertTrue(one.indexOf(prefix)==-1);
+			      prefix = "z";
+			      assertTrue(one.indexOf(prefix)==-1);
+			      
+				
+		 	
+}}
