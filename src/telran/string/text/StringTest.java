@@ -111,5 +111,25 @@ class StringTest {
 		        assertTrue(one.endsWith(prefix)); 
 		        prefix = "ga";
 		        assertFalse(one.endsWith(prefix));
+		        
+		      
+}
+		 	@Test
+		    void equalsIgnoreCaseTest() {
+		 		
+		 		String one = "HeLlO25";
+			    String two = "hElLo25";
+			    
+
+			        assertTrue(one.equalsIgnoreCase(two)); 
+			        
+			        two = "hElLo15";			        
+			        assertFalse(one.equalsIgnoreCase(two));
+			        
+			        one = "hello25";
+			        two = "hello25";			        
+			        assertTrue(one.equalsIgnoreCase(two)); 
+			        
+			       
 }
 }
