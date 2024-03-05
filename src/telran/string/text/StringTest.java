@@ -70,4 +70,27 @@ class StringTest {
 		        assertTrue(one.compareToIgnoreCase(two) == 0); 
 		        assertFalse(one.compareToIgnoreCase(two) != 0);
 			
-		}}
+		}
+		 @Test
+		    void startsWithTest() {
+		        String one = "Boogi-woogi";
+		        String prefix = "oo";
+		        int toffset = 7;		      
+		        assertTrue(one.startsWith(prefix, toffset)); 
+		        
+		        toffset = 12;
+		        assertFalse(one.startsWith(prefix, toffset));
+		        
+		        toffset = -1;
+		        assertFalse(one.startsWith(prefix, toffset));
+		        
+		        toffset = -1;
+		        assertFalse(one.startsWith(prefix, toffset));
+		        
+		        prefix = "oa";
+		        toffset = 7;	
+		        
+		        assertFalse(one.startsWith(prefix, toffset));
+		        
+		    }
+}
