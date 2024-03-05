@@ -147,4 +147,24 @@ class StringTest {
 			      
 				
 		 	
-}}
+}
+			@Test
+		    void lastIndexOfTest() {
+				  String one = "Boogi-woogi";
+			      char ch = 'g';
+			      int indexOfChar = 9;
+			      int result=one.lastIndexOf(ch);
+			      assertEquals(indexOfChar, result);      
+			     
+			      ch = 'o';
+			      indexOfChar = 8;
+			      result=one.lastIndexOf(ch);
+			      assertEquals(indexOfChar, result);  
+			      
+			      ch = 'z';
+			      indexOfChar = -1;
+			      result=one.lastIndexOf(ch);
+			      assertEquals(indexOfChar, result);  
+		 	
+}
+}
